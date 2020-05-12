@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title> Weather Analysis</title>
+        <title> Comparison </title>
         <meta charset="UTF8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -16,7 +16,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button class="navbar-brand">
-                <a class='weather' href="index.html"> Weather Analysis </a>
+                <a class='weather' href="index.html" target='_blank'> Weather Analysis </a>
             </button>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -35,7 +35,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Comparison.html" target='_blank'> Comparison </a>
+                        <a class="nav-link" href="comparison.html">Comparison</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Data.html" target="_blank">Data</a>
@@ -45,17 +45,24 @@
             </div>
         </nav>
 
-        <div class="container-fluid">
-            <div class='row justify-content-between'> 
-                <div class="col-lg-7 border rounded">
-                    <h3 class='header'> Summary </h3>
+        <div class='container'>
+            <h3 class='header'> Comparison: Latitude vs ...</h3>
+            <div class='text-center'>
+                <div class='row'>
+                    <h4 class='header col-lg-7 col-md-7 col-sm-12'> ... Max Temperature</h4>
+                    <h4 class='header col-lg-3 col-md-3 col-sm-12'> ... Humidity</h4> 
                 </div>
-                <div class="col-lg-4 border rounded">
-                    <h3 class='header'> Visualization</h3>
-                        <img src="Assets/figures/Fig1.png" alt="Latitude vs Temperature" class="img-fluid">
-                        <img src="Assets/figures/Fig2.png" alt="Latitude vs Humidity" class="img-fluid">
-                        <img src="Assets/figures/Fig3.png" alt="Latitude vs Cloudiness" class="img-fluid">
-                        <img src="Assets/figures/Fig4.png" alt="Latitude vs Wind Speed" class="img-fluid">
+                <div class='row'>
+                    <img class='col-lg-5 col-md-5 col-sm-12' src="Assets/figures/Fig1.png" alt="Latitude vs Temperature" class="img-fluid">
+                    <img class='col-lg-5 col-md-5 col-sm-12' src="Assets/figures/Fig2.png" alt="Latitude vs Humidity" class="img-fluid">
+                </div>
+                <div class='row'>
+                    <h4 class='header col-lg-7 col-md-7 col-sm-12'> ... Cloudiness</h4>
+                    <h4 class='header col-lg-3 col-md-3 col-sm-12'> ... Wind Speed</h4> 
+                </div>
+                <div class='row'>
+                    <img class='col-lg-5 col-md-5 col-sm-12' src="Assets/figures/Fig3.png" alt="Latitude vs Cloudiness" class="img-fluid">
+                    <img class='col-lg-5 col-md-5 col-sm-12' src="Assets/figures/Fig4.png" alt="Latitude vs Wind Speed" class="img-fluid">
                 </div>
             </div>
         </div>
