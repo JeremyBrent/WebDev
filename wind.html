@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title> Weather Analysis</title>
+        <title> Wind Analysis </title>
         <meta charset="UTF8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="Assets/css/style.css">
@@ -11,11 +11,11 @@
 
     </head>
 
-    <body class='bg-light'>
+    <body>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <button class="navbar-brand p-1">
-                <a class='weather' href="index.html"> Weather Analysis </a>
+                <a class='weather' href="index.html" target='_blank'> Weather Analysis </a>
             </button>
             <button class="navbar-toggler ml-sm-auto d-md-none" type="button" data-toggle="collapse" data-target="navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -26,15 +26,15 @@
                         <a class="nav-link dropdown-toggle" type="button" href="#" id="DropdownMenuButton" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Plots
                         </a>
-                        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                        <div class="dropdown-menu bg-dark " aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item text-light" href="cloud.html" target="_blank">Cloudiness</a>
                             <a class="dropdown-item text-light" href="humid.html" target="_blank">Humidity</a>
                             <a class="dropdown-item text-light" href="temp.html" target="_blank">Max Temperature</a>
-                            <a class="dropdown-item text-light" href="wind.html" target="_blank">Wind Speed</a>
+                            <a class="dropdown-item text-light" href="wind.html" >Wind Speed</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Comparison.html" target='_blank'> Comparison </a>
+                        <a class="nav-link" href="Comparison.html"> Comparison </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Data.html" target="_blank"> Data</a>
@@ -47,29 +47,31 @@
         <div class="container-fluid mt-5 p-5">
             <div class='row justify-content-between'> 
                 <div class="col col-lg-7 border rounded bg-white">
-                    <h3 class='header p-4'> Summary </h3>
-                    <img src="Assets/figures/Lat_Temp_fig.png" alt="Latitude vs Temperature" class="img-fluid col-lg-7">
-                    <p class="text-muted mt-2"> The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled from the OpenWeatherMap API to assemble a dataset on over 500 cities. </p>
-                    <p class="text-muted"> After asseumbling the dataset, we use Matplotlib to plot various weather variables against latitude. Factor we looked at included temperature, cloudiness, windspeed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations observed.</p>
+                    <h3 class='header p-4'> Wind Speed Analysis </h3>
+                    <div class="text-center">
+                        <img src="Assets/figures/linregress/Latitude_Wind Speed (MPH)_Southern.jpg" alt="Latitude vs Wind Speed" class="social shadow-sm">
+                        <img src="Assets/figures/linregress/Latitude_Wind Speed (MPH)_Northern.jpg" alt="Latitude vs Wind Speed" class="social shadow-sm">
+                    </div>
+                    <p class="text-muted m-4"> These figures are displaying a linear regression describing the relationship between windspeed and latitude in both the  
+                        northern and southern hemispheres. Based on the r-squared values, we can qualify this relationship as very weak or non-existant. That being said, it does appear that wind speed is clustering between ~10 MPH and 0 MPH.  </p>
                 </div>
                 <div class="col col-lg-4 border rounded bg-white">
                     <h3 class='header p-4'> Visualization</h3>
-                        <a href="temp.html">
+                        <a href="temp.html" >
                             <img src="Assets/figures/linregress/Latitude_Temperature (F)_Northern.jpg" alt="Latitude vs Temperature" class="img-fluid col-lg-12">
                         </a>
-                        <a href="humid.html">
+                        <a href="humid.html" >
                             <img src="Assets/figures/linregress/Latitude_Humidity (%)_Northern.jpg" alt="Latitude vs Humidity" class="img-fluid col-lg-12">
                         </a>
-                        <a href="cloud.html">
+                        <a href="cloud.html" >
                             <img src="Assets/figures/linregress/Latitude_Cloudiness (%)_Northern.jpg" alt="Latitude vs Cloudiness" class="img-fluid col-lg-12">
                         </a>
-                        <a href="wind.html">
+                        <a href="wind.html" >
                             <img src="Assets/figures/linregress/Latitude_Wind Speed (MPH)_Northern.jpg" alt="Latitude vs Wind Speed" class="img-fluid col-lg-12">
                         </a>
                 </div>
             </div>
         </div>
-
 
     </body>
 </html>

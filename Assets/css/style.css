@@ -3,17 +3,14 @@
     margin:0;
 }
 
-.navbar {
-    background-color:white;
-}
-
 .navbar-brand {
     border-radius:5px;
+    border-color:black;
     background-color:#38A1F3;
     position:absolute;
     left:50px;
     text-decoration: none;
-    padding:7px
+    
 }
 
 .weather {
@@ -24,47 +21,21 @@
 }
 
 .header {
-    color:#38A1F3;
-    padding:20px;
-    padding-left:5px;
+    color: grey;
     font-family: serif, Helvetica, Arial;
     font-weight:bold;
-
 }
 
-.row {
-    margin-top: 100px;
-    margin-right:0px;
-    margin-left:0px
-}
-
-
-
-body {
-    background-color:#E8E8E8;
-}
 
 .border {
     background-color: white;
-    box-shadow: 5px 5px 25px #38A1F3;
+    box-shadow: 5px 5px 10px lightsteelblue;
     
 }
 
-.img-fluid {
-    max-width:100%;
-    height:auto;
-}
-
-.container-fluid {
-    padding-left:50px;
-    padding-right:50px;
-    
-}
 .container {
-    background-color: white;
-    margin-top: 100px;
-    box-shadow: 5px 5px 25px #38A1F3;
-}
+    box-shadow: 5px 5px 10px lightsteelblue;
+} 
 .table {
     margin-top:25px;
     border-style:solid;
