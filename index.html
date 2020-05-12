@@ -11,9 +11,9 @@
 
     </head>
 
-    <body class='bg-light'>
+    <body class='bg-dark'>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button class="navbar-brand p-1">
                 <a class='weather' href="index.html"> Weather Analysis </a>
             </button>
@@ -39,20 +39,23 @@
                     <li class="nav-item">
                         <a class="nav-link" href="Data.html" target="_blank"> Data</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" target="_blank"> About the Author</a>
+                    </li>
                     
                 </ul>
             </div>
         </nav>
 
-        <div class="container-fluid mt-5 p-5">
+        <div class="container-fluid my-5 p-5">
             <div class='row justify-content-between'> 
-                <div class="col col-lg-7 col-12 border rounded bg-white">
+                <div class="col col-lg-7 col-12 border rounded bg-white h-50">
                     <h3 class='header p-4'> Summary </h3>
                     <img src="Assets/figures/Lat_Temp_fig.png" alt="Latitude vs Temperature" class="img-fluid col-lg-7">
                     <p class="text-muted mt-2"> The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled from the OpenWeatherMap API to assemble a dataset on over 500 cities. </p>
-                    <p class="text-muted"> After asseumbling the dataset, we use Matplotlib to plot various weather variables against latitude. Factor we looked at included temperature, cloudiness, windspeed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations observed.</p>
+                    <p class="text-muted"> After assembling the dataset, we used Matplotlib to plot various weather variables against latitude. The factors considered included temperature, cloudiness, windspeed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations observed.</p>
                 </div>
-                <div class="col col-lg-4 col-12 border rounded bg-white">
+                <div class="second-con col col-lg-4 col-12 border rounded bg-white">
                     <h3 class='header p-4'> Visualization</h3>
                         <a href="temp.html">
                             <img src="Assets/figures/linregress/Latitude_Temperature (F)_Northern.jpg" alt="Latitude vs Temperature" class="img-fluid col-lg-12">

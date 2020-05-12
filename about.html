@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title> Comparison </title>
+        <title> About the author </title>
         <meta charset="UTF8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="Assets/css/style.css">
@@ -14,8 +14,8 @@
     <body class='bg-dark'>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-brand p-1">
-                <a class='weather' href="index.html" target='_blank'> Weather Analysis </a>
+            <button class="navbar-brand p-1 ">
+                <a class='weather text-light' href="index.html"> Weather Analysis </a>
             </button>
             <button class="navbar-toggler ml-sm-auto d-md-none" type="button" data-toggle="collapse" data-target="navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -26,7 +26,7 @@
                         <a class="nav-link dropdown-toggle" type="button" href="#" id="DropdownMenuButton" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Plots
                         </a>
-                        <div class="dropdown-menu bg-dark " aria-labelledby="navbarDropdownMenuLink">
+                        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item text-light" href="cloud.html" target="_blank">Cloudiness</a>
                             <a class="dropdown-item text-light" href="humid.html" target="_blank">Humidity</a>
                             <a class="dropdown-item text-light" href="temp.html" target="_blank">Max Temperature</a>
@@ -34,43 +34,58 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Comparison.html"> Comparison </a>
+                        <a class="nav-link" href="Comparison.html" target='_blank'> Comparison </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Data.html" target="_blank"> Data</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html" target="_blank"> About the Author</a>
+                        <a class="nav-link" href="about.html"> About the Author</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
-        <div class='container my-5'>
-            <h3 class='header p-4'> Comparison: Latitude vs ...</h3>
-            <div class='row text-center mt-5'>
-                <div class='col  col-md-6 col-12'>
-                    <h4 class='header'> ... Max Temperature</h4>
-                    <img  src="Assets/figures/Lat_Temp_fig.png" alt="Latitude vs Temperature" class="img-fluid">
-                </div>
-                <div class='col  col-md-6 col-12'>
-                    <h4 class='header'> ... Humidity</h4> 
-                    <img  src="Assets/figures/Lat_Hum_fig.png" alt="Latitude vs Humidity" class="img-fluid">
-                </div>
+        <div class='container my-5 bg-light'>
+            <div class='row'>
+                <h4 class='header col-4 px-5 pt-5'>
+                    Jeremy Brent
+                </h4>
+                <div class="w-100 d-none d-md-block"></div>
+                <h7 class='text-muted px-5 pb-5'>
+                    5/12/2020
+                </h7>
             </div>
-            <div class='row text-center mt-5'>
-                <div class='col  col-md-6  col-12'>
-                    <h4 class='header'> ... Cloudiness</h4>
-                    <img src="Assets/figures/Lat_Cloud_fig.png" alt="Latitude vs Cloudiness" class="img-fluid">
-                </div>
-                <div class='col  col-md-6 col-12'>
-                    <h4 class='header'> ... Wind Speed</h4> 
-                    <img src="Assets/figures/Lat_Wind_fig.png" alt="Latitude vs Wind Speed" class="img-fluid">
-                </div>
-            </div>
+            
+            <div class='row'>
+                <img class='px-5 pb-5 col-lg-6 col-12 img-responsive"' src="Assets/Headshot/Headshot.jpg" alt='Headshot image'>
+                <div class='col-lg-6 col-12 pr-5'> 
+                    <p>
+                        Hello and welcome to my first live project! I am currently a student at the Rutgers Data Science Bootcamp. 
+                    </p>
+                    <p> I am an aspiring Data Scientist who is self-motivated to acquire the skills necessary to adapt in our quickly evolving digital world. 
+                        I pride myself on being capable of working independently and collaborating with diverse teams in complex and uncertain 
+                        environments. 
+                    </p>
+                    <p>
+                        I am currently looking for either internship or full-time opportunities in data science, data analytics, software 
+                        engineering and/or user-experience research.
+                    </p>
+                    <p>
+                        Whether I’m implementing self-taught concepts into a project, grabbing lunch with friends, or snowboarding down 
+                        the nearest mountain, I can always be found working to improve myself, helping others, and having fun.
+                    </p>
+                    <p> I would love to connect in order to network! Find my projects in my <a href="https://github.com/JeremyBrent"> Github Repo</a> 
+                        and/or contact me through my <a href='https://www.linkedin.com/in/jeremy-brent/'> LinkedIn Profile </a>
+                        or email at JeremyBrentData@gmail.com. 
+                    </p>
 
+                </div>
+            </div>
+            
         </div>
 
+        
 
     </body>
 </html>

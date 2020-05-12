@@ -6,15 +6,15 @@
 .navbar-brand {
     border-radius:5px;
     border-color:black;
-    background-color:white;
     position:absolute;
     left:50px;
     text-decoration: none;
+    background-color:#3b5998;
     
 }
 
 .weather {
-    color:#3b5998;
+    color:white;
     text-decoration: none;
     font-family: serif, Helvetica, Arial;
     font-weight:bold
@@ -29,12 +29,15 @@
 
 .border {
     background-color: white;
-    box-shadow: 5px 5px 10px grey;
+    box-shadow: 10px 10px 10px black;
+    border-radius:5px;
     
 }
 
 .container {
-    box-shadow: 5px 5px 10px grey;
+    box-shadow: 10px 10px 10px black;
+    border-radius:5px;
+    background-color: white;
 } 
 .table {
     margin-top:25px;
@@ -44,5 +47,26 @@
 .data_text {
     margin-left:5px;
     margin-top:75px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 0px) { 
+    .second-con {
+        margin-top:50px
+    }
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    .second-con {
+        margin-top:50px
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .second-con {
+        margin-top:0px
+    }
 }
 
