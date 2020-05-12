@@ -6,7 +6,7 @@
 .navbar-brand {
     border-radius:5px;
     border-color:black;
-    background-color:grey;
+    background-color:white;
     position:absolute;
     left:50px;
     text-decoration: none;
@@ -14,14 +14,14 @@
 }
 
 .weather {
-    color:white;
+    color:#3b5998;
     text-decoration: none;
     font-family: serif, Helvetica, Arial;
     font-weight:bold
 }
 
 .header {
-    color: grey;
+    color: #3b5998;
     font-family: serif, Helvetica, Arial;
     font-weight:bold;
 }
@@ -29,12 +29,12 @@
 
 .border {
     background-color: white;
-    box-shadow: 5px 5px 10px lightsteelblue;
+    box-shadow: 5px 5px 10px grey;
     
 }
 
 .container {
-    box-shadow: 5px 5px 10px lightsteelblue;
+    box-shadow: 5px 5px 10px grey;
 } 
 .table {
     margin-top:25px;
