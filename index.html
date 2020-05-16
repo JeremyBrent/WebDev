@@ -1,80 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title> Weather Analysis</title>
-        <meta charset="UTF8">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="Assets/css/style.css">
-        <script defer src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    </head>
+<head>
+    <title> Weather Analysis</title>
+    <meta charset="UTF8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <script defer src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 
-    <body class='bg-dark'>
+</head>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-brand p-1">
-                <a class='weather' href="index.html"> Weather Analysis </a>
-            </button>
-            <button class="navbar-toggler ml-sm-auto d-md-none" type="button" data-toggle="collapse" data-target="navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-nav flex-row ml-md-auto d-sm-none d-md-flex" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" type="button" href="#" id="DropdownMenuButton" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Plots
-                        </a>
-                        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item text-light" href="cloud.html" target="_blank">Cloudiness</a>
-                            <a class="dropdown-item text-light" href="humid.html" target="_blank">Humidity</a>
-                            <a class="dropdown-item text-light" href="temp.html" target="_blank">Max Temperature</a>
-                            <a class="dropdown-item text-light" href="wind.html" target="_blank">Wind Speed</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="comparison.html" target='_blank'> Comparison </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="data.html" target="_blank"> Data</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html" target="_blank"> About the Author</a>
-                    </li>
-                    
-                </ul>
+<body class='bg-dark'>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-brand p-1 mt-2 fixed-top">
+            <a class='weather' href="index.html"> Weather Analysis </a>
+        </button>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> 
+        <div class="navbar-collapse collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" type="button" href="#" id="DropdownMenuButton" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item text-light" href="cloud.html" target="_blank">Cloudiness</a>
+                        <a class="dropdown-item text-light" href="humid.html" target="_blank">Humidity</a>
+                        <a class="dropdown-item text-light" href="temp.html" target="_blank">Max Temperature</a>
+                        <a class="dropdown-item text-light" href="wind.html" target="_blank">Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comparison.html" target='_blank'> Comparison </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html" target="_blank"> Data</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" target="_blank"> About the Author</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid my-5 p-5">
+        <div class='row justify-content-between'>
+            <div class="col col-lg-7 col-12 border rounded bg-white h-50">
+                <h3 class='header p-4'> Summary </h3>
+                <div class='row'>
+                    <img src="Assets/figures/Lat_Temp_fig.png" alt="Latitude vs Temperature"
+                        class="img-fluid col-lg-7 col-12 pr-0">
+                    <p class="index-sum-1 text-justify text-muted h-50 col-lg-5 col-12 mt-2 pl-0 pr-md-4"> The purpose
+                        of this project was to analyze how weather changes as you get closer to the equator. To
+                        accomplish this analysis, we first pulled from the OpenWeatherMap API to assemble a dataset on
+                        over 500 cities. </p>
+                    <p class="index-sum-2 text-justify text-muted "> After assembling the dataset, we used
+                        Matplotlib to plot various weather variables against latitude. The factors considered included
+                        temperature, cloudiness, windspeed, and humidity. This site provides the source data and
+                        visualizations created as part of the analysis, as well as explanations and descriptions of any
+                        trends and correlations observed.</p>
+                </div>
             </div>
-        </nav>
-
-        <div class="container-fluid my-5 p-5">
-            <div class='row justify-content-between'> 
-                <div class="col col-lg-7 col-12 border rounded bg-white h-50">
-                    <h3 class='header p-4'> Summary </h3>
-                    <div class='row'>
-                        <img src="Assets/figures/Lat_Temp_fig.png" alt="Latitude vs Temperature" class="img-fluid col-lg-7 col-12 pr-0">
-                        <p class="index-sum-1 text-justify text-muted h-50 col-lg-5 col-12 mt-2 pl-0 pr-md-4"> The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled from the OpenWeatherMap API to assemble a dataset on over 500 cities. </p>
-                        <p class="index-sum-2 text-justify text-muted flex-fill"> After assembling the dataset, we used Matplotlib to plot various weather variables against latitude. The factors considered included temperature, cloudiness, windspeed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations observed.</p>
-                    </div>  
-                </div>
-                <div class="second-con col col-lg-4 col-12 border rounded bg-white">
-                    <h3 class='header p-4'> Visualization</h3>
-                        <a href="temp.html">
-                            <img src="Assets/figures/linregress/Latitude_Temperature_Northern.jpg" alt="Latitude vs Temperature" class="img-fluid col-lg-12">
-                        </a>
-                        <a href="humid.html">
-                            <img src="Assets/figures/linregress/Latitude_Humidity_Northern.jpg" alt="Latitude vs Humidity" class="img-fluid col-lg-12">
-                        </a>
-                        <a href="cloud.html">
-                            <img src="Assets/figures/linregress/Latitude_Cloudiness_Northern.jpg" alt="Latitude vs Cloudiness" class="img-fluid col-lg-12">
-                        </a>
-                        <a href="wind.html">
-                            <img src="Assets/figures/linregress/Latitude_Wind_Speed_Northern.jpg" alt="Latitude vs Wind Speed" class="img-fluid col-lg-12 pb-2">
-                        </a>
-                </div>
+            <div class="second-con col col-lg-4 col-12 border rounded bg-white">
+                <h3 class='header p-4'> Visualization</h3>
+                <a href="temp.html">
+                    <img src="Assets/figures/linregress/Latitude_Temperature_Northern.jpg" alt="Latitude vs Temperature"
+                        class="img-fluid col-lg-12">
+                </a>
+                <a href="humid.html">
+                    <img src="Assets/figures/linregress/Latitude_Humidity_Northern.jpg" alt="Latitude vs Humidity"
+                        class="img-fluid col-lg-12">
+                </a>
+                <a href="cloud.html">
+                    <img src="Assets/figures/linregress/Latitude_Cloudiness_Northern.jpg" alt="Latitude vs Cloudiness"
+                        class="img-fluid col-lg-12">
+                </a>
+                <a href="wind.html">
+                    <img src="Assets/figures/linregress/Latitude_Wind_Speed_Northern.jpg" alt="Latitude vs Wind Speed"
+                        class="img-fluid col-lg-12 pb-2">
+                </a>
             </div>
         </div>
+    </div>
 
 
-    </body>
+</body>
+
 </html>
