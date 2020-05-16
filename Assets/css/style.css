@@ -49,7 +49,7 @@
     margin-top:75px;
 }
 
-/* Small devices (landscape phones, 576px and up) */
+/* Small devices (landscape phones, 576px and up)
 @media (min-width: 0px) { 
     .second-con {
         margin-top:50px
@@ -64,9 +64,9 @@
         margin-right:15px;
     }
  }
-
+*/
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) { 
+/* @media (min-width: 768px) { 
     .second-con {
         margin-top:50px;
     }
@@ -80,9 +80,9 @@
         margin-right:15px;
     }
 }
-
+*/
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+/* @media (min-width: 992px) { 
     .second-con {
         margin-top:0px;
     }
@@ -93,8 +93,5 @@
     .index-sum-2 {
         margin-left:0px;
         margin-right:0px
-    }
-}
-
-
-
+    } 
+}*/

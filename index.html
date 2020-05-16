@@ -36,20 +36,20 @@
                         Plots
                     </a>
                     <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item text-light" href="cloud.html" target="_blank">Cloudiness</a>
-                        <a class="dropdown-item text-light" href="humid.html" target="_blank">Humidity</a>
-                        <a class="dropdown-item text-light" href="temp.html" target="_blank">Max Temperature</a>
-                        <a class="dropdown-item text-light" href="wind.html" target="_blank">Wind Speed</a>
+                        <a class="dropdown-item text-light" href="cloud.html" >Cloudiness</a>
+                        <a class="dropdown-item text-light" href="humid.html" >Humidity</a>
+                        <a class="dropdown-item text-light" href="temp.html" >Max Temperature</a>
+                        <a class="dropdown-item text-light" href="wind.html" >Wind Speed</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="comparison.html" target='_blank'> Comparison </a>
+                    <a class="nav-link" href="comparison.html" > Comparison </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="data.html" target="_blank"> Data</a>
+                    <a class="nav-link" href="data.html" > Data</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html" target="_blank"> About the Author</a>
+                    <a class="nav-link" href="about.html" > About the Author</a>
                 </li>
 
             </ul>
@@ -59,20 +59,25 @@
     <div class="container-fluid my-5 p-5">
         <div class='row justify-content-between'>
             <div class="col col-lg-7 col-12 border rounded bg-white h-50">
+            
                 <h3 class='header p-4'> Summary </h3>
-                <div class='row'>
-                    <img src="Assets/figures/Lat_Temp_fig.png" alt="Latitude vs Temperature"
-                        class="img-fluid col-lg-7 col-12 pr-0">
-                    <p class="index-sum-1 text-justify text-muted h-50 col-lg-5 col-12 mt-2 pl-0 pr-md-4"> The purpose
-                        of this project was to analyze how weather changes as you get closer to the equator. To
-                        accomplish this analysis, we first pulled from the OpenWeatherMap API to assemble a dataset on
-                        over 500 cities. </p>
-                    <p class="index-sum-2 text-justify text-muted "> After assembling the dataset, we used
-                        Matplotlib to plot various weather variables against latitude. The factors considered included
-                        temperature, cloudiness, windspeed, and humidity. This site provides the source data and
-                        visualizations created as part of the analysis, as well as explanations and descriptions of any
-                        trends and correlations observed.</p>
-                </div>
+                <div class="w-100 d-none d-block"></div>
+                <img src="Assets/figures/Lat_Temp_fig.png" alt="Latitude vs Temperature"
+                    class="pull-left col-lg-7 col-12 pr-0">
+                <p class="pull-right index-sum-1 text-justify text-muted"> The purpose
+                    of this project was to analyze how weather changes as you get closer to the equator. To
+                    accomplish this analysis, we first pulled from the OpenWeatherMap API to assemble a dataset on
+                    over 500 cities. 
+                    <br> <br> After assembling the dataset, we used
+                    Matplotlib to plot various weather variables against latitude. The factors considered included
+                    temperature, cloudiness, windspeed, and humidity. This site provides the source data and
+                    visualizations created as part of the analysis, as well as explanations and descriptions of any
+                    trends and correlations observed.
+                    <br> <br>To find the linear regressions for each variable against latitude, navigate through the 
+                    visualization section and press on the figures or navigate through the plots dropdown menu in 
+                    the navigation bar. 
+                </p>
+                
             </div>
             <div class="second-con col col-lg-4 col-12 border rounded bg-white">
                 <h3 class='header p-4'> Visualization</h3>
