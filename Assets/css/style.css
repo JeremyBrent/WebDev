@@ -54,6 +54,10 @@
     .second-con {
         margin-top:50px
     }
+    .navbar-brand {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
 }
    /* .index-sum-1 {
         margin-left:15px;
